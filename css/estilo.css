@@ -1,0 +1,66 @@
+.nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    
+      
+}
+.nav-item:hover{
+    
+    background: #cdd8cd;
+    transition: .5s;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+   }
+
+footer{
+    
+    width: 100%;
+    background: #a5c5a5;
+}
+
+.TituloAnimal{
+    color: #E79322;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.TituloFlora{
+    font-family: 'Acme', sans-serif;
+    color:#28A530;
+}
+
+textarea{
+    resize: none;
+ }
+
+.icono:hover{
+    text-decoration: none;
+}
+
+.mapa{
+
+    width: 28rem; 
+    height: 15rem;
+   
+}
+.dropdown-item:hover{
+    background: #cdd8cd;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.titulosPag{
+    font-family: 'Archivo Black', sans-serif;
+    color: rgb(184, 92, 67);
+}
+.imgFauFlo{
+    font-family: 'Amaranth', sans-serif;
+    color: rgb(29, 150, 150);
+}
+
+.cardTienda{
+    background: rgb(246, 248, 247);
+}
+.fondoTienda{
+    background: rgb(208, 252, 231);
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="Description" content="Reserva Natural de Colombia">
+    <meta name="Author" content="Nicolás Troche y Santiago Sosa">
+    <meta name="Copyright" content="derechos reservados">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body >
+
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg bg-light shadow-sm fixed-top">
+            <a class="navbar-brand " href="index.html" tabindex="-1">
+                <img src="img/logo.svg" class="w-25 img-fluid" alt="Logo Reseva Natural">
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-label="Activa la navegación"
+                aria-controls="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  " id="menu">
+                <div class="navbar-nav nav nav-tabs align-items-center">
+                    <a href="index.html" class=" nav-item nav-link mx-2 text-success div-nav" tabindex="1">Home</a>
+                    <a href="quienes-somos.html" class="nav-item nav-link mx-2 text-success" tabindex="2">Quienes Somos</a>
+                    <a href="fauna.html" class="nav-item nav-link mx-2 text-success" tabindex="3">Fauna</a>
+                    <a href="flora.html" class="nav-item nav-link mx-2 text-success " tabindex="4">Flora</a>
+
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-success" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="5">
+                            Agenda-Visita
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-success" href="visita-particular.html">Particulares</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-success" href="visita-educativa.html">Educativas</a>
+                        </div>
+                    </li>
+
+                    <a href="tienda.html" class="nav-item nav-link mx-2  active " >Tienda
+                        <span class="sr-only">(actual)</span>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fondoTienda">
+
+        <header class="container text-center pt-5 mt-5">
+            <h1 class="titulosPag">Postales</h1>
+            <h5 class="text-muted">Postales dibujadas a mano por ilustradores colombianos que reflejan nuestra cultura, gente, flora y
+                fauna, en una postal co-creada contigo para que recorran todo el mundo.</h5>
+        </header>
+
+        <section class="container">
+
+            <div class="card-deck text-center">
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales/zorro-frente.jpg"
+                                alt="Postal de Zorro Cangrejero">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title ">Zorro Cangrejero</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-zorro.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales/colibri-frente.jpg"
+                                alt="Postal de Colibrí">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Colibrí</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-colibrí.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales/rana-frente.jpg"
+                                alt="Postal de Rana Venenosa">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Rana Dorada Venenosa</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-rana.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="card-deck text-center">
+
+                <article class="card shadow-sm py-3 my-3 cardTienda ">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales/jaguar-frente.jpg" alt="Postal de Jaguar">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Jaguar</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-jaguar.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales/tucuxi-frente.jpg" alt="Postal de Tucuxi">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Tucuxi</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-tucuxi.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales-Flora/liro-frente.jpg"
+                                alt="Postal de Lirio">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Lirio</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-lirio.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="card-deck text-center">
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales-flora/papa-frente.jpg"
+                                alt="Postal de Flor de Papa">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Flor de Papa</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-flor-de-papa.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales-flora/heliconia-frente.jpg"
+                                alt="Postal de Heliconia">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Heliconia</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-heliconia.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+                <article class="card shadow-sm py-3 my-3 cardTienda">
+                    <header class="card-header">
+                        <figure class="img-tarjeta">
+                            <img class="card-img-top w-75" src="img/Postales-flora/anturio-frente.jpg"
+                                alt="Postal de Anturio">
+                        </figure>
+                    </header>
+
+                    <div class="card-body">
+                        <h1 class="card-title">Anturio</h1>
+                        <p class="lead"></p>
+                        <a href="Postales/postal-anturio.html" title="Ver más" class="btn btn-outline-primary"
+                            role="button">Ver más</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class=" border-top pt-4 d-flex justify-content-center">
+
+        <div class="row align-items-center container ">
+
+            <div class="col-12 col-md-4 ">
+                <img class="logo-footer w-25 img-fluid" src="img/logo.svg" alt="index.html">
+            </div>
+
+            <div class="col-12 col-md-4  "><small class="text-muted">&copy;Compañia 2020, todos los derechos
+                    reservados</small></div>
+
+            <div class="col-12 col-md-4 text-center   ">
+                <header>
+                    <h5>Contactanos</h5>
+                </header>
+
+                <ul class="text-muted list-unstyled">
+                    <li><i class="fas fa-phone-alt" aria-hidden="true"></i>Tel. 2 123 456|</li>
+                    <li><i class="fas fa-envelope-square" aria-hidden="true"></i>Info@ResevaNatural.org|</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/cf7c3ee364.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</html>

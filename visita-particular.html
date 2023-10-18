@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="Description" content="Reserva Natural de Colombia">
+    <meta name="Author" content="Nicolás Troche y Santiago Sosa">
+    <meta name="Copyright" content="derechos reservados">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Visita</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg bg-light shadow-sm fixed-top">
+            <a class="navbar-brand " href="index.html" tabindex="-1">
+                <img src="img/logo.svg" class="w-25 img-fluid" alt="Logo de la Reserva">
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-label="Activa la navegación"
+                aria-controls="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse " id="menu">
+                <div class="navbar-nav nav nav-tabs">
+                    <a href="index.html" class=" nav-item nav-link mx-2 text-success" tabindex="1">Home</a>
+                    <a href="quienes-somos.html" class="nav-item nav-link mx-2 text-success" tabindex="2">Quienes Somos</a>
+                    <a href="fauna.html" class="nav-item nav-link mx-2  text-success" tabindex="3">Fauna</a>
+                    <a href="flora.html" class="nav-item nav-link mx-2  text-success " tabindex="4">Flora</a>
+                    
+                    <li class="nav-item dropdown  ">
+                        <a class="nav-link dropdown-toggle text-success active " id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="5">
+                            Agenda-Visita
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-success " href="visita-particular.html">Particulares
+                                <span class="sr-only">(actual)</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-success" href="visita-educativa.html">Educativas</a>
+                        </div>
+                    </li>
+                    <a href="tienda.html" class="nav-item nav-link mx-2 text-success ">Tienda</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container pt-5 mt-5 bg-light">
+
+        <div>
+            <header>
+                <h1 class="text-center"><u>Particulares</u></h1>
+            </header>
+
+            <form>
+                
+                    <div class="form-group p-3">
+                        <label for="#email"><strong>Email</strong></label>
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com"
+                            aria-describedby="emailTip" required >
+                        <small class="form-text text-muted" id="emailTip">Nunca Compartiremos tu información con
+                            nadie</small>
+                    </div>
+
+                    <hr>
+                    
+                    <div role="radiogroup" aria-labelledby="lblRadios" class="p-3">
+                        <label id="lblRadios"><strong>Es una Organización o una agencia de viaje ?</strong></label>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="opcion1" id="radio1" name="viaje"
+                                checked>
+                            <label for="radio1">Organización</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="opcion2" id="radio2" name="viaje">
+                            <label for="radio2">Agencia de Viajes</label>
+                        </div>
+
+                        <div>
+                            <label for="nombre">Escriba el nombre de la misma </label>
+                            <input type="text" id="nombre" class="form-control"
+                                placeholder="Ingrese el nombre de la misma" required>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3">
+                        <strong><label for="departamento"> Departamento</label></strong>
+                        <select id="departamento" class="form-control">
+                            <optgroup label="Selección Departamentos">
+                                <option value="Artigas">Artigas</option>
+                                <option value="Canelones">Canelones</option>
+                                <option value="Cerro Largo">Cerro Largo</option>
+                                <option value="Colonia"selected >Colonia</option>
+                                <option value="Durazno">Durazno</option>
+                                <option value="Flores">Flores</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Lavalleja" >Lavalleja</option>
+                                <option value="Maldonado">Maldonado</option>
+                                <option value="Montevideo">Montevideo</option>
+                                <option value="Paysandú">Paysandú</option>
+                                <option value="Rio Negro" >Rio Negro</option>
+                                <option value="Rivera">Rivera</option>
+                                <option value="Rocha">Rocha</option>
+                                <option value="Salto">Salto</option>
+                                <option value="San Jose" >San Jose</option>
+                                <option value="Soriano">Soriano</option>
+                                <option value="Tacuarembo">Tacuarembo</option>
+                                <option value="Treinta y Tres">Treinta y Tres</option>
+                                
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3" >
+                        <label for="nombre"><strong>Coordinador del Viaje</strong> </label>
+                        <input type="text" id="nombre" class="form-control"
+                            placeholder="Ingrese el nombre del Coordinador" >
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3">
+                        <label for="telefono"> <strong> Teléfono de contacto</strong></label>
+                        <input type="tel" id="telefono" class="form-control"
+                            placeholder="Ingrese su telefono con la característica" required>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3" >
+                        <label for="nombrePmay"><strong>Participantes Mayores </strong> </label>
+                        <input type="text" id="nombrePmay" class="form-control"
+                            placeholder="Ingrese la cantidad " required>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3" >
+                        <label for="nombrePmen"><strong>Participantes Menores</strong> </label>
+                        <input type="text" id="nombrePmen" class="form-control"
+                            placeholder="Ingrese la cantidad " required>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3">
+                        <label for="fecha"><strong>Fecha prevista para la Visita</strong></label>
+                        <input type="date" class="form-control" id="fecha" required>
+                    </div>
+
+                    <hr>
+
+                    <div role="radiogroup" aria-labelledby="radiosP" class="p-3">
+                        <label id="radiosP"><strong>Seleccione un horario</strong></label>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="am" id="radio01" name="horario" checked>
+                            <label for="radio01">9:30 hs</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" value="pm" id="radio02" name="horario">
+                            <label for="radio02"> 14:30 hs</label>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group p-3">
+                        <label for="mensaje"> <strong>Escribe tu mensaje</strong></label>
+                        <textarea id="mensaje" rows="3" class="form-control"></textarea>
+                    </div>
+                    
+                        <button type="submit" class="btn btn-primary mb-4 px-3 " aria-label="Envia el formulario"> Enviar </button>
+                    
+                
+            </form>
+
+    </main>
+
+    <footer class=" border-top pt-4 d-flex justify-content-center">
+
+        <div class="row align-items-center container ">
+
+            <div class="col-12 col-md-4 ">
+                <img class="logo-footer w-25 img-fluid" src="img/logo.svg" alt="index.html">
+            </div>
+
+            <div class="col-12 col-md-4  "><small class="text-muted">&copy;Compañia 2020, todos los derechos
+                    reservados</small></div>
+
+            <div class="col-12 col-md-4 text-center   ">
+                <header>
+                    <h5>Contactanos</h5>
+                </header>
+
+                <ul class="text-muted list-unstyled">
+                    <li><i class="fas fa-phone-alt" aria-hidden="true"></i>Tel. 2 123 456|</li>
+                    <li><i class="fas fa-envelope-square" aria-hidden="true"></i>Info@ResevaNatural.org|</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/cf7c3ee364.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</html>
